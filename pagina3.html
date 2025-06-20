@@ -4,7 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selmys</title>
-                                                               
+    <link rel="stylesheet" href="estilos3.css">
 </head>
-
+<body>
+    <div class="contenedor">
+        <div class="corazon-inicial"></div>
+        <div class="arbol" style="display: none;">
+            <div class="tronco"></div>
+            <div class="ramas" style="display: none;">
+                <div class="rama rama1"></div>
+                <div class="rama rama2"></div>
+                <div class="rama rama3"></div>
+                <div class="rama rama4"></div>
+            </div>
+            <div class="hojas"></div>
+        </div>
+        <div class="contador" style="opacity: 0; transform: translate(-50%, -50%) scale(0);">
+            <span id="anos">0</span> años,
+            <span id="meses">0</span> meses,
+            <span id="dias">0</span> días,
+            <span id="segundos">0</span> segundos
+        </div>
+        <div class="texto" style="opacity: 0; transform: translateX(-100%);">Mi amor por ti comenzó hace:</div>
+    </div>
+    <script src="script3.js"></script>
+</body>
 </html>
