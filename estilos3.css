@@ -1,0 +1,114 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.corazon-inicial {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: girar 2s linear infinite;
+}
+
+@keyframes girar {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.arbol {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 200px;
+}
+
+.tronco {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 0px;
+    background-color: #964B00;
+    transition: height 2s;
+}
+
+.rama {
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background-color: #964B00;
+}
+
+.rama1 {
+    top: 20px;
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.rama2 {
+    top: 50px;
+    right: 0;
+    transform: rotate(-45deg);
+}
+
+.rama3 {
+    top: 80px;
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.rama4 {
+    top: 110px;
+    right: 0;
+    transform: rotate(-45deg);
+}
+
+.hojas {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+}
+
+.corazon-hoja {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.contador {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 1s;
+}
+
+.texto {
+    position: absolute;
+    font-size: 18px;
+    transition: all 1s;
+}
