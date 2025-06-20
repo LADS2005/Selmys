@@ -1,0 +1,36 @@
+
+body {
+    background-color: #C7B8EA; /* Morado claro */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton {
+    background-color: #7A288A;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#boton.active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 20px 10px rgb(255, 255, 255);
+}
+
+#boton.active {
+    transform: scale(0.9);
+    transition: transform 0.1s ease-in-out;
+}
